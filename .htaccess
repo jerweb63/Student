@@ -1,0 +1,8 @@
+# This file includes the RewriteBase option which is only needed if using mod_userdir
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /~black/
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^/?([a-zA-Z0-9]+)$ $1.php [L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^/?([a-zA-Z0-9]+)$ $1.html [L]

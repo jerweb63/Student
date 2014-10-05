@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+  <link rel="stylesheet" type="text/css" href="style/student2.css">
+</head>
+<form action="http://localhost/~black/student/new.php" method="post">
+  <h1>Student Registration</h1>
+  <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+
+  <section>
+    <h2>Personal Details</h2>
+
+    <fieldset>
+      <legend>Title</legend>
+      <ul>
+        <li>
+          <label for="title_1">
+            <input type="radio" id="title_1" name="title" value="Mr." />
+            Mr.
+          </label>
+        </li>
+        <li>
+          <label for="title_2">
+            <input type="radio" id="title_2" name="title" value="Ms." />
+            Ms.
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <p>
+      <label for="name">
+        <span>Name: </span>
+        <input type="text" id="name" name="name" required />
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+    </p>
+
+    <p>
+      <label for="e-mail">
+        <span>E-mail: </span>
+        <input type="email" id="e-mail" name="e-mail" required />
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+    </p>
+
+        <p>
+      <label for="birth_date">
+        <span>Birth Date:</span>
+        <input type="text" id="birth_date" name="birth_date" required />
+        <strong><abbr title="required">*</abbr></strong>
+        <em>formated as yyyy-mm-dd</em>
+      </label>
+    </p>
+  </section>
+
+  <section>
+    <h2>Address Details</h2>
+
+    <p>
+      <label for="street">
+        <span>Street:</span>
+        <input type="text" id="street" name="street" required />
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+    </p>
+
+    <p>
+      <label for="city">
+        <span>City/Town:</span>
+        <input type="text" id="city" name="city" required />
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+    </p>
+
+    <p>
+      <label for="state">
+        <span>State:</span>
+        <input type="text" id="state" name="state" required />
+        <strong><abbr title="required">*</abbr></strong>
+        <span id="zip_code_span">Zip Code:</span>
+        <input type="text" id="zip_code" name="zip_code" required />
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+    </p>
+
+  </section>
+
+  <section>
+    <p>
+      <button>Submit</button>
+    </p>
+  </section>
+</form>
+</html>
